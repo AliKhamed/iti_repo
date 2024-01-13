@@ -4,18 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'ls'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing branch test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+       
     }
 }
+
